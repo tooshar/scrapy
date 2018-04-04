@@ -1,0 +1,16 @@
+<div>
+  
+    <input placeholder="Type the word you want to search!" type="text" [(ngModel)]="keyword" (keyup.enter)="fetchImages()" />
+    <button (click)="fetchImages()">Fetch</button>
+    <span *ngIf="this.error">*Field can't be empty.</span>
+  
+</div>
+<div>
+  <div *ngIf="loading; else showImages" class="loading">loading...</div>
+  <ng-template #showImages class="row">
+    <div *ngFor="let i of images" class="column">
+      <img [src]="i.thumb_url" style="width:90%" />
+    </div>
+  </ng-template>
+
+</div>

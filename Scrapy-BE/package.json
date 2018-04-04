@@ -1,0 +1,20 @@
+{
+  "name": "scrapy-be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tushar prajapati",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "images-scraper": "^2.0.11",
+    "jimp": "^0.2.28",
+    "mongoose": "^5.0.11",
+    "nodemon": "^1.17.3"
+  }
+}

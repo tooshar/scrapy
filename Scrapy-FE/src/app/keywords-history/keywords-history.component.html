@@ -1,0 +1,14 @@
+<div style="float:left; width:40%">
+  <div *ngFor="let s of scrapyData; let i=index" class="keywords" (click)="getStoredImages(s,i)">
+    {{s.keyword}}
+  </div>
+</div>
+<div class="vertical-menu">
+  <div *ngIf="loading; else showImages" class="menu-loading">Please Click on Keyword!</div>
+  <ng-template #showImages>
+    <div *ngFor="let s of keywordsImages" style="margin-left: 40%; margin-top:15px">
+      <img [src]="s" style="width: 40%; height: 40%" />
+    </div>
+  </ng-template>
+
+</div>
