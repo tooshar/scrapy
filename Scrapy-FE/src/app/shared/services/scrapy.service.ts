@@ -6,8 +6,8 @@ import { Observable } from 'rxjs/Rx';
 @Injectable()
 export class ScrapyService {
 
-    _url = 'https://images-scrapy.herokuapp.com/api/v1'; // For api
-    // _url = 'http://localhost:3000/api/v1';      //For local 
+    // _url = 'https://images-scrapy.herokuapp.com/api/v1'; // For api
+     _url = 'http://localhost:3000/api/v1';      //For local 
     headers: any;
     options: any;
     constructor(
