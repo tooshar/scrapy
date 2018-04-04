@@ -17,6 +17,10 @@ Run `ng build` to build the Scrapy-FE project. The build artifacts will be store
 Then paste the `dist/` folder in Scrapy-BE.
 Now only run `nodemon` in Scrapy-BE. Navigate to `http://localhost:3000/`
 
+## Note
+
+Add Allow-Control-Allow-Origin: * v1.0.3 `browser extension`, available in Google Chrome.
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
